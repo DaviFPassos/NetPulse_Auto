@@ -1,0 +1,56 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>NetPulse Infrastructure Status</title>
+        <style>
+            body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1e1e2e; color: #cdd6f4; margin: 40px; }
+            h1 { color: #89b4fa; text-align: center; }
+            .timestamp { text-align: center; color: #a6adc8; margin-bottom: 30px; }
+            .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; }
+            .card { background-color: #313244; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); text-align: center; }
+            .ONLINE { border-top: 5px solid #a6e3a1; }
+            .OFFLINE { border-top: 5px solid #f38ba8; }
+            .status { font-weight: bold; font-size: 1.2em; }
+            .status.ONLINE { color: #a6e3a1; }
+            .status.OFFLINE { color: #f38ba8; }
+        </style>
+    </head>
+    <body>
+        <h1>NetPulse Live Infrastructure Dashboard</h1>
+        <div class="timestamp">Last Scan: 2026-05-20 00:52:38</div>
+        <div class="grid">
+    
+            <div class="card ONLINE">
+                <h3>Google_DNS</h3>
+                <p style="color: #bac2de;">8.8.8.8</p>
+                <p class="status ONLINE">ONLINE</p>
+                <p>Latency: 47.314 ms</p>
+            </div>
+            
+            <div class="card ONLINE">
+                <h3>Cloudflare_DNS</h3>
+                <p style="color: #bac2de;">1.1.1.1</p>
+                <p class="status ONLINE">ONLINE</p>
+                <p>Latency: 5.634 ms</p>
+            </div>
+            
+            <div class="card OFFLINE">
+                <h3>Unifor_Portal</h3>
+                <p style="color: #bac2de;">www.unifor.br</p>
+                <p class="status OFFLINE">OFFLINE</p>
+                <p>Latency: 0.0 ms</p>
+            </div>
+            
+            <div class="card OFFLINE">
+                <h3>Broken_Server</h3>
+                <p style="color: #bac2de;">192.0.2.1</p>
+                <p class="status OFFLINE">OFFLINE</p>
+                <p>Latency: 0.0 ms</p>
+            </div>
+            
+        </div>
+    </body>
+    </html>
+    
