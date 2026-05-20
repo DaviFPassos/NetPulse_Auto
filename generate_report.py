@@ -8,7 +8,6 @@ HTML_OUTPUT = os.path.join(BASE_DIR, "web", "index.html")
 def build_dashboard():
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
-    # Começa a montar a string do HTML (Unindo Python com HTML/CSS)
     html_content = f"""
     <!DOCTYPE html>
     <html lang="en">
